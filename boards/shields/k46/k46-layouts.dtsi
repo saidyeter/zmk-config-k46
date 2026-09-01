@@ -1,0 +1,65 @@
+// See https://zmk.dev/docs/development/hardware-integration/physical-layouts
+// for how to configure this.
+
+#include <physical_layouts.dtsi>
+
+/ {
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan>;
+
+        // Edit this to define the positions and sizes of the keys, or remove it
+        // if your keyboard will not support ZMK Studio.
+        // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
+      keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   25     500   430   455>
+            , <&key_physical_attrs 100 100  100   20     500   430   455>
+            , <&key_physical_attrs 100 100  200    0     500   430   455>
+            , <&key_physical_attrs 100 100  300   20     500   430   455>
+            , <&key_physical_attrs 100 100  400   20     500   430   455>
+            , <&key_physical_attrs 100 100  700   25  (-500)   770   455>
+            , <&key_physical_attrs 100 100  800   20  (-500)   770   455>
+            , <&key_physical_attrs 100 100  900    0  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1000   20  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1100   20  (-500)   770   455>
+            , <&key_physical_attrs 100 100    0  125     500   430   455>
+            , <&key_physical_attrs 100 100  100  120     500   430   455>
+            , <&key_physical_attrs 100 100  200  100     500   430   455>
+            , <&key_physical_attrs 100 100  300  120     500   430   455>
+            , <&key_physical_attrs 100 100  400  120     500   430   455>
+            , <&key_physical_attrs 100 100  700  125  (-500)   770   455>
+            , <&key_physical_attrs 100 100  800  120  (-500)   770   455>
+            , <&key_physical_attrs 100 100  900  100  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1000  120  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1100  120  (-500)   770   455>
+            , <&key_physical_attrs 100 100    0  225     500   430   455>
+            , <&key_physical_attrs 100 100  100  220     500   430   455>
+            , <&key_physical_attrs 100 100  200  200     500   430   455>
+            , <&key_physical_attrs 100 100  300  220     500   430   455>
+            , <&key_physical_attrs 100 100  400  220     500   430   455>
+            , <&key_physical_attrs 100 100  700  225  (-500)   770   455>
+            , <&key_physical_attrs 100 100  800  220  (-500)   770   455>
+            , <&key_physical_attrs 100 100  900  200  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1000  220  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1100  220  (-500)   770   455>
+            , <&key_physical_attrs 100 100    0  325     500   430   455>
+            , <&key_physical_attrs 100 100  100  320     500   430   455>
+            , <&key_physical_attrs 100 100  200  300     500   430   455>
+            , <&key_physical_attrs 100 100  300  320     500   430   455>
+            , <&key_physical_attrs 100 100  400  320     500   430   455>
+            , <&key_physical_attrs 100 100  700  325  (-500)   770   455>
+            , <&key_physical_attrs 100 100  800  320  (-500)   770   455>
+            , <&key_physical_attrs 100 100  900  300  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1000  320  (-500)   770   455>
+            , <&key_physical_attrs 100 100 1100  320  (-500)   770   455>
+            , <&key_physical_attrs 100 100  230  455    1500   430   455>
+            , <&key_physical_attrs 100 100  350  455    1500   430   455>
+            , <&key_physical_attrs 100 100  480  455    3000   430   455>
+            , <&key_physical_attrs 100 100  620  455 (-3000)   770   455>
+            , <&key_physical_attrs 100 100  750  455 (-1500)   770   455>
+            , <&key_physical_attrs 100 100  870  455 (-1500)   770   455>
+            ;
+    };
+};
