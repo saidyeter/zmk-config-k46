@@ -22,28 +22,28 @@
         diode-direction = "col2row";
         wakeup-source;
 
-        // Replace these comments with the GPIO pins in the matrix.
+        // Replace these comments with the GPIO pins in the matrix.        
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
 
         col-gpios
-            = <&gpio0 29 GPIO_ACTIVE_HIGH> // col1
-            , <&gpio0 2  GPIO_ACTIVE_HIGH> // col2
-            , <&gpio1 15 GPIO_ACTIVE_HIGH> // col3
-            , <&gpio1 13 GPIO_ACTIVE_HIGH> // col4
-            , <&gpio1 11 GPIO_ACTIVE_HIGH> // col5
-            , <&gpio1 0  GPIO_ACTIVE_HIGH> // col6
-            , <&gpio0 24 GPIO_ACTIVE_HIGH> // col7
-            , <&gpio0 22 GPIO_ACTIVE_HIGH> // col8
-            , <&gpio0 20 GPIO_ACTIVE_HIGH> // col9
-            , <&gpio0 17 GPIO_ACTIVE_HIGH> // col10
+            = <&gpio0 06 GPIO_ACTIVE_HIGH> // 006  col1
+            , <&gpio0 08 GPIO_ACTIVE_HIGH> // 008   col2
+            , <&gpio0 17 GPIO_ACTIVE_HIGH> // 017  col3
+            , <&gpio0 20 GPIO_ACTIVE_HIGH> // 020  col4
+            , <&gpio0 22 GPIO_ACTIVE_HIGH> // 022 col5
+            , <&gpio0 31 GPIO_ACTIVE_HIGH> // 031   col6
+            , <&gpio0 29 GPIO_ACTIVE_HIGH> // 029  col7
+            , <&gpio0 02 GPIO_ACTIVE_HIGH> // 002  col8
+            , <&gpio1 15 GPIO_ACTIVE_HIGH> // 115 col9
+            , <&gpio1 13 GPIO_ACTIVE_HIGH> // 113  col10
             ;
 
         row-gpios
-            = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1
-            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2
-            , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3 **
-            , <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row4
-            , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row5
+            = <&gpio1 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 101 row1
+            , <&gpio1 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 102 row2
+            , <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 107 row3
+            , <&gpio0 09 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 009 row4
+            , <&gpio1 06 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 106 row5
             ;
     };
 
