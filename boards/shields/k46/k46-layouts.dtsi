@@ -13,6 +13,7 @@
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.
         // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
+        // https://zmk-physical-layout-converter.streamlit.app
       keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   25     500   430   455>
             , <&key_physical_attrs 100 100  100   20     500   430   455>
