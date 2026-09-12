@@ -3,11 +3,12 @@
 // instructions.
 
 #include <dt-bindings/zmk/matrix_transform.h>
-
 #include "k46-layouts.dtsi"
+#include "k46_oled.dtsi"
 
 / {
     chosen {
+        zephyr,display = &oled;
         zmk,physical-layout = &default_layout;
     };
 
